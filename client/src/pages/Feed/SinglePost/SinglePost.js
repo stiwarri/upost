@@ -14,7 +14,7 @@ class SinglePost extends Component {
 
     componentDidMount() {
         const postId = this.props.match.params.postId;
-        fetch('http://localhost:8080/feeds/post/' + postId, {
+        fetch('https://upost-server-live.herokuapp.com/feeds/post/' + postId, {
             headers: {
                 Authorization: 'Bearer ' + this.props.token
             }
@@ -29,7 +29,7 @@ class SinglePost extends Component {
                 this.setState({
                     title: resData.post.title,
                     author: resData.post.creator.name,
-                    image: 'http://localhost:8080/' + resData.post.imageUrl,
+                    image: 'https://upost-server-live.herokuapp.com/' + resData.post.imageUrl,
                     date: new Date(resData.post.createdAt).toLocaleDateString('en-US'),
                     content: resData.post.content
                 });
