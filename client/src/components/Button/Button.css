@@ -40,7 +40,7 @@
 
 .button--flat:hover,
 .button--flat:active {
-    background: rgba(250, 184, 63, 0.3);
+    background: #c79aa7;
     color: black;
 }
 
@@ -52,34 +52,34 @@
 
 .button--raised:hover,
 .button--raised:active {
-    background: #fab83f;
+    background: #a3586d;
 }
 
 .button.button--accent {
-    border-color: #fab83f;
-    color: #fab83f;
+    border-color: #a3586d;
+    color: #a3586d;
 }
 
 .button--accent:hover,
 .button--accent:active {
-    background: #fab83f;
+    background: #a3586d;
     color: black;
 }
 
 .button--flat.button--accent:hover,
 .button--flat.button--accent:active {
-    background: rgba(250, 184, 63, 0.3);
-    color: #fab83f;
+    background: #c79aa7;
+    color: #a3586d;
 }
 
 .button.button--accent.button--raised {
-    background: #fab83f;
+    background: #a3586d;
     color: black;
 }
 
 .button--raised.button--accent:hover,
 .button--raised.button--accent:active {
-    background: #fbc766;
+    background: #c79aa7;
 }
 
 .button.button--danger {

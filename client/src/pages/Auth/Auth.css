@@ -2,13 +2,19 @@
     width: 90%;
     margin: auto;
     padding: 1rem;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+.signup-form-title,
+.signin-form-title {
+    text-align: center;
+    color: #a3586d;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
     .auth-form {
-      width: 40rem;
+        width: 40rem;
     }
-  }
-  
+}

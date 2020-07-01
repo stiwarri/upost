@@ -1,41 +1,42 @@
 .navigation-item {
-  padding: 0 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .navigation-item a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .navigation-item.mobile {
-  font-size: 1.75rem;
-  margin: 0.5rem 0;
+    font-size: 1.75rem;
+    margin: 0.5rem 0;
 }
 
 .navigation-item.mobile a {
-  color: black;
+    color: black;
 }
 
 .navigation-item a:hover,
 .navigation-item a:active,
 .navigation-item a.active {
-  color: #fab83f;
+    color: #a3586d;
+    font-weight: bold;
 }
 
 .navigation-item:last-of-type {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 .navigation-item button {
-  font: inherit;
-  background: transparent;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 0;
+    font: inherit;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
 }
 
 .navigation-item button:hover,
 .navigation-item button:active {
-  color: #fab83f;
+    color: #a3586d;
 }
