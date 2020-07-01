@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "shubham",
+        "MONGO_PASSWORD": "newUser123",
+        "MONGO_DATABASE": "message-node"
+    }
+}
