@@ -14,8 +14,8 @@
 }
 
 .button:disabled {
-    background: #ccc;
-    color: #888888;
+    /* background: #ccc;
+    color: #888888; */
     cursor: not-allowed;
     border: #ccc;
     box-shadow: none;

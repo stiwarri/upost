@@ -40,11 +40,13 @@ class Login extends Component {
             };
             let formIsValid = true;
             for (const inputName in updatedForm) {
-                formIsValid = formIsValid && updatedForm[inputName].valid;
+                if (inputName !== 'formIsValid') {
+                    formIsValid = formIsValid && updatedForm[inputName].valid;
+                }
             }
+            updatedForm.formIsValid = formIsValid;
             return {
-                loginForm: updatedForm,
-                formIsValid: formIsValid
+                loginForm: updatedForm
             };
         });
     };
@@ -64,6 +66,7 @@ class Login extends Component {
     };
 
     render() {
+        // console.log(this.state.loginForm.formIsValid)
         return (
             <>
                 <h2 className="signup-form-title">ALREADY HAVE AN ACCOUNT?</h2>
@@ -98,8 +101,8 @@ class Login extends Component {
                             valid={this.state.loginForm['password'].valid}
                             touched={this.state.loginForm['password'].touched}
                         />
-                        <Button design="raised" type="submit" loading={this.props.loading}>
-                            Login
+                        <Button design="raised" type="submit" disabled={!this.state.loginForm.formIsValid} loading={this.props.loading}>
+                            Login {this.state.loginForm.formIsValid}
                         </Button>
                     </form>
                 </Auth>

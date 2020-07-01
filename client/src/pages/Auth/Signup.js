@@ -47,11 +47,13 @@ class Signup extends Component {
             };
             let formIsValid = true;
             for (const inputName in updatedForm) {
-                formIsValid = formIsValid && updatedForm[inputName].valid;
+                if (inputName !== 'formIsValid') {
+                    formIsValid = formIsValid && updatedForm[inputName].valid;
+                }
             }
+            updatedForm.formIsValid = formIsValid;
             return {
-                signupForm: updatedForm,
-                formIsValid: formIsValid
+                signupForm: updatedForm
             };
         });
     };
@@ -109,7 +111,7 @@ class Signup extends Component {
                             valid={this.state.signupForm['password'].valid}
                             touched={this.state.signupForm['password'].touched}
                         />
-                        <Button design="raised" type="submit" loading={this.props.loading}>
+                        <Button design="raised" type="submit" disabled={!this.state.signupForm.formIsValid} loading={this.props.loading}>
                             Signup
                         </Button>
                     </form>
