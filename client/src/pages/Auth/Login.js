@@ -83,6 +83,7 @@ class Login extends Component {
                             id="email"
                             label="Your E-Mail"
                             type="email"
+                            placeholder="username@domain.com"
                             control="input"
                             onChange={this.inputChangeHandler}
                             onBlur={this.inputBlurHandler.bind(this, 'email')}
@@ -95,6 +96,7 @@ class Login extends Component {
                             label="Password"
                             type="password"
                             control="input"
+                            placeholder="Must have atleast 5 characters"
                             onChange={this.inputChangeHandler}
                             onBlur={this.inputBlurHandler.bind(this, 'password')}
                             value={this.state.loginForm['password'].value}

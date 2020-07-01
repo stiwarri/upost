@@ -82,6 +82,7 @@ class Signup extends Component {
                             id="email"
                             label="Your E-Mail"
                             type="email"
+                            placeholder="username@domain.com"
                             control="input"
                             onChange={this.inputChangeHandler}
                             onBlur={this.inputBlurHandler.bind(this, 'email')}
@@ -92,6 +93,7 @@ class Signup extends Component {
                         <Input
                             id="name"
                             label="Your Name"
+                            placeholder="John Doe"
                             type="text"
                             control="input"
                             onChange={this.inputChangeHandler}
@@ -104,6 +106,7 @@ class Signup extends Component {
                             id="password"
                             label="Password"
                             type="password"
+                            placeholder="Must have atleast 5 characters"
                             control="input"
                             onChange={this.inputChangeHandler}
                             onBlur={this.inputBlurHandler.bind(this, 'password')}
